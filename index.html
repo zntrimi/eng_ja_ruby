@@ -1,0 +1,38 @@
+<!-- sample html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+</head>
+<body>
+    <h1>英語ルビ</h1>
+    <button onclick="toggleParagraphs()">表示</button>
+
+    <p id="paragraph1"><ruby>I<rt>私は</rt></ruby> <ruby>remember<rt>覚えている</rt></ruby> <ruby>as<rt>として</rt></ruby> a <ruby>child<rt>子供</rt></ruby>, <ruby>and<rt>そして</rt></ruby> <ruby>as<rt>として</rt></ruby> a <ruby>young<rt>若い</rt></ruby> <ruby>budding<rt>芽生える</rt></ruby> <ruby>naturalist<rt>博物学者</rt></ruby>, <ruby>spending<rt>過ごす</rt></ruby> <ruby>all<rt>全ての</rt></ruby> <ruby>my<rt>私の</rt></ruby> <ruby>time<rt>時間</rt></ruby> <ruby>observing<rt>観察する</rt></ruby> <ruby>and<rt>そして</rt></ruby> <ruby>testing<rt>試す</rt></ruby> the <ruby>world<rt>世界</rt></ruby> <ruby>around<rt>周りの</rt></ruby> <ruby>me<rt>私</rt></ruby>—<ruby>moving<rt>動かす</rt></ruby> <ruby>pieces<rt>部分</rt></ruby>, <ruby>altering<rt>変える</rt></ruby> the <ruby>flow<rt>流れ</rt></ruby> of <ruby>things<rt>もの</rt></ruby>, <ruby>and<rt>そして</rt></ruby> <ruby>documenting<rt>記録する</rt></ruby> <ruby>ways<rt>方法</rt></ruby> the <ruby>world<rt>世界</rt></ruby> <ruby>responded<rt>反応した</rt></ruby> to <ruby>me<rt>私に</rt></ruby>. <ruby>Now<rt>今</rt></ruby>, <ruby>as<rt>として</rt></ruby> <ruby>an<rt>一人の</rt></ruby> <ruby>adult<rt>大人</rt></ruby> <ruby>and<rt>そして</rt></ruby> a <ruby>professional<rt>専門家</rt></ruby> <ruby>naturalist<rt>博物学者</rt></ruby>, <ruby>I’ve<rt>私は</rt></ruby> <ruby>approached<rt>取り組んだ</rt></ruby> <ruby>language<rt>言語</rt></ruby> <ruby>in<rt>〜の中で</rt></ruby> the <ruby>same<rt>同じ</rt></ruby> <ruby>way<rt>方法</rt></ruby>, <ruby>not<rt>〜でなく</rt></ruby> <ruby>from<rt>から</rt></ruby> <ruby>an<rt>一つの</rt></ruby> <ruby>academic<rt>学術的</rt></ruby> <ruby>point<rt>観点</rt></ruby> <ruby>of<rt>の</rt></ruby> <ruby>view<rt>見方</rt></ruby> <ruby>but<rt>しかし</rt></ruby> <ruby>as<rt>として</rt></ruby> a <ruby>curious<rt>好奇心旺盛な</rt></ruby> <ruby>child<rt>子供</rt></ruby> <ruby>still<rt>まだ</rt></ruby> <ruby>building<rt>作る</rt></ruby> <ruby>little<rt>小さな</rt></ruby> <ruby>mud<rt>泥</rt></ruby> <ruby>dams<rt>ダム</rt></ruby> <ruby>in<rt>〜の中で</rt></ruby> <ruby>creeks<rt>小川</rt></ruby> <ruby>and<rt>そして</rt></ruby> <ruby>chasing<rt>追いかける</rt></ruby> <ruby>after<rt>〜の後に</rt></ruby> <ruby>frogs<rt>カエル</rt></ruby>. <ruby>So<rt>だから</rt></ruby> <ruby>this<rt>この</rt></ruby> <ruby>book<rt>本</rt></ruby> <ruby>is<rt>は</rt></ruby> <ruby>an<rt>一つの</rt></ruby> <ruby>odd<rt>奇妙な</rt></ruby> <ruby>thing<rt>もの</rt></ruby>: <ruby>it<rt>それは</rt></ruby> <ruby>is<rt>です</rt></ruby> a <ruby>naturalist’s<rt>博物学者の</rt></ruby> <ruby>walk<rt>散歩</rt></ruby> <ruby>through<rt>を通して</rt></ruby> the <ruby>language-making<rt>言語作成</rt></ruby> <ruby>landscape<rt>風景</rt></ruby> of the <ruby>English<rt>英語</rt></ruby> <ruby>language<rt>言語</rt></ruby>, <ruby>and<rt>そして</rt></ruby> <ruby>following<rt>従って</rt></ruby> <ruby>in<rt>〜に</rt></ruby> the <ruby>naturalist’s<rt>博物学者の</rt></ruby> <ruby>tradition<rt>伝統</rt></ruby> <ruby>it<rt>それは</rt></ruby> <ruby>combines<rt>組み合わせる</rt></ruby> <ruby>observation<rt>観察</rt></ruby>, <ruby>experimentation<rt>実験</rt></ruby>, <ruby>speculation<rt>推測</rt></ruby>, <ruby>and<rt>そして</rt></ruby> <ruby>documentation<rt>記録</rt></ruby>—<ruby>activities<rt>活動</rt></ruby> <ruby>we<rt>私たち</rt></ruby> <ruby>don’t<rt>しない</rt></ruby> <ruby>normally<rt>通常</rt></ruby> <ruby>associate<rt>関連付ける</rt></ruby> <ruby>with<rt>と共に</rt></ruby> <ruby>language<rt>言語</rt></ruby>.
+    </p>
+    <p id="paragraph2" style="display: none;"> I remember as a child, and as a young budding naturalist, spending all my time observing and testing the world around me—moving pieces, altering the flow of things, and documenting ways the world responded to me. Now, as an adult and a professional naturalist, I’ve approached language in the same way, not from an academic point of view but as a curious child still building little mud dams in creeks and chasing after frogs. So this book is an odd thing: it is a naturalist’s walk through the language-making landscape of the English language, and following in the naturalist’s tradition it combines observation, experimentation, speculation, and documentation—activities we don’t normally associate with language.
+    </p>
+
+</body>
+<script>
+    function toggleParagraphs() {
+        var para1 = document.getElementById('paragraph1');
+        var para2 = document.getElementById('paragraph2');
+
+        // para1が表示されている場合、para2を表示し、para1を非表示にする
+        if (para1.style.display === 'none') {
+            para1.style.display = 'block';
+            para2.style.display = 'none';
+        } else {
+            // そうでなければ、para1を表示し、para2を非表示にする
+            para1.style.display = 'none';
+            para2.style.display = 'block';
+        }
+    }
+
+
+</script>
+
+</html>
